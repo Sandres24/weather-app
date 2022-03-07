@@ -1,0 +1,13 @@
+.CardComponent {
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: right center;
+   box-shadow: 0 0 10px black;
+   width: 90%;
+   max-width: 400px;
+   height: 85vh;
+   border-radius: 1.5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

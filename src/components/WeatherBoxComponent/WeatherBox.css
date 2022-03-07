@@ -1,0 +1,157 @@
+.WeatherBoxComponent {
+   height: 100%;
+   display: grid;
+   grid-template-rows: 0.3fr 1fr 0.3fr;
+   justify-items: center;
+}
+
+.first-container {
+   background: rgba(0, 0, 0, 0.3);
+   width: 100%;
+   padding: 0.5rem 0;
+   border-radius: 1.5rem 1.5rem 0 0;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+}
+
+.temperature {
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.weather-time {
+   font-size: 2rem;
+}
+
+.wheater-degrees-farenheit {
+   color: white;
+   text-shadow: 1px 0px black, -1px 0px black, 0px 1px black, 0px -1px black;
+   font-weight: 600;
+   font-size: 3.5rem;
+}
+
+.degrees-farenheit {
+   color: white;
+   text-shadow: 1px 0px black, -1px 0px black, 0px 1px black, 0px -1px black;
+   font-size: 1.5rem;
+   position: relative;
+   bottom: 20px;
+}
+
+.weather-icon-container {
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.weather-icon {
+   width: 40%;
+}
+
+.weather-icon-image {
+   width: 100%;
+}
+
+.current-weather {
+   color: white;
+}
+
+.current-city-country {
+   color: white;
+   text-shadow: 1px 0px 3px black, -1px 0px 3px black, 0px 1px 3px black,
+      0px -1px 3px black, 1px 1px 3px black, 1px -1px 3px black,
+      -1px 1px 3px black, -1px -1px 3px black;
+   font-size: 2rem;
+   font-weight: 600;
+   text-align: center;
+   margin: 1rem 0 0 0;
+}
+
+.second-container {
+   width: 95%;
+   position: relative;
+}
+
+.button-convert {
+   background: rgba(0, 0, 0, 0.7);
+   color: white;
+   font-family: 'Hubballi';
+   font-size: 1.2rem;
+   font-weight: bold;
+   padding: 0.5rem 2rem;
+   border: none;
+   border-radius: 0.5rem 0.5rem 0 0;
+   cursor: pointer;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.third-container {
+   background: rgba(0, 0, 0, 0.7);
+   color: white;
+   width: 100%;
+   padding: 2.5%;
+   border-radius: 0 0 1.5rem 1.5rem;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 1rem;
+   align-items: center;
+   justify-items: center;
+}
+
+.weather-info {
+   width: 80%;
+}
+
+.clouds,
+.humidity {
+   text-align: right;
+}
+
+.text-info {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 768px) {
+   .wheater-degrees-farenheit {
+      font-size: 4.5rem;
+   }
+
+   .degrees-farenheit {
+      font-size: 2rem;
+      bottom: 25px;
+   }
+
+   .current-city-country {
+      font-size: 2.5rem;
+   }
+
+   .text-info {
+      font-size: 1.1rem;
+   }
+
+   .weather-info {
+      width: 55%;
+   }
+
+   .current-weather {
+      font-size: 1.5rem;
+   }
+
+   .button-convert {
+      width: 40%;
+   }
+
+   .button-convert:hover {
+      border-top: 1px solid white;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+   }
+}

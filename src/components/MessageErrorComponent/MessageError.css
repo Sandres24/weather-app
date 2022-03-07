@@ -1,0 +1,28 @@
+.MessageErrorComponent {
+   background: #191f26;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.acces-denied-container {
+   width: 35%;
+   max-width: 150px;
+   margin: 0 0 2rem 0;
+}
+
+.acces-denied-image {
+   width: 100%;
+}
+
+.message-error {
+   color: white;
+   text-align: center;
+   font-size: 1.5rem;
+   line-height: 2rem;
+   width: 80%;
+   max-width: 550px;
+}
